@@ -1,8 +1,7 @@
 grafica.mapa <- function(mar.inf, mar.izq, mar.sup, mar.der,
                          long, lat, z,
                          rango.x, rango.y,
-                         col, breaks, lab.breaks, titulo.mapa,
-                         mapa.base.1, mapa.base.2) {
+                         col, breaks, lab.breaks, titulo.mapa) {
    # -----------------------------------------------------------------------------
    # Funcion que devuelve plot de mapa de alguna variable meteorológica u otra
    # -----------------------------------------------------------------------------
@@ -18,11 +17,7 @@ grafica.mapa <- function(mar.inf, mar.izq, mar.sup, mar.der,
                      breaks = categorias,
                      las = 1,
                      main = titulo.mapa,
-                     cex.main = 1.7, cex.axis = 1.5), 
-               
-               # genera mapa base
-               plot(mapa.base.1, axes = TRUE, border = '#050c05', add = TRUE),
-               plot(mapa.base.2, axes = TRUE, border = '#006400', lwd = 4, add = TRUE),
+                     cex.main = 1.7, cex.axis = 1.5),
                
                par(cex = 1.2),
                
