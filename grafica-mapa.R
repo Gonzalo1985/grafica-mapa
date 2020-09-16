@@ -1,14 +1,11 @@
-# -----------------------------------------------------------------------------
-# Funcion que devuelve plot de mapa de alguna variable meteorologica
-# -----------------------------------------------------------------------------
-
 grafica.mapa <- function(mar.inf, mar.izq, mar.sup, mar.der,
                          long, lat, z,
                          rango.x, rango.y,
                          col, breaks, lab.breaks, titulo.mapa,
-                         mapa.base.1, mapa.base.2)
-  
-  {
+                         mapa.base.1, mapa.base.2) {
+   # -----------------------------------------------------------------------------
+   # Funcion que devuelve plot de mapa de alguna variable meteorologica
+   # -----------------------------------------------------------------------------
    # margenes figura: inferior, izquierda, superior y derecha
    par(mar = c(mar.inf, mar.izq, mar.sup, mar.der))
   
